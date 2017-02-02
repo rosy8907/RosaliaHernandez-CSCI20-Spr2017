@@ -8,7 +8,7 @@ int main () {
     cout << "      ,----{   . .    )  " << endl;
     cout << "     /      \\_     _/   " << endl;
     cout << "    /|        (\\  |(    " << endl;
-    cout << "   ^ \     /___\\/\\ |     " << endl;
+    cout << "   ^ \\    /___\\/\\ |     " << endl;
     cout << "      |__|   |__|-      " << endl;
     
 }

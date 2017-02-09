@@ -3,7 +3,7 @@
 // Description: This code will play mad libs with the user
 
 #include <iostream>
-#include <string> 
+#include <string>  //Allows us to use strings
 using namespace std;
 
 int main () {
@@ -16,8 +16,9 @@ int main () {
     string wordAnimal;
     string wordGame;
     
+    //Request information from the use with directions.
     cout << "Enter your name:" << endl;
-    getline (cin, wordName);
+    getline (cin, wordName); //'get line' allows the user to input information with spaces
     cout << endl;
     cout << "Hey " << wordName << ", let's play Mad Libs!"<< endl;
     cout << "You will need to choose six different words." << endl;
@@ -35,6 +36,8 @@ int main () {
     cout << "Enter a game that you like to play:" << endl;
     getline (cin, wordGame);
     
+    //This begins the story with all of the information the user as input into the program.
+    //I got this mad libs story from an online source, I did not come up with this story.
     cout << endl;
     cout << "A Vacation Is... " << endl;
     cout << "by " << wordName << endl;

@@ -8,15 +8,15 @@ using namespace std;
 
 int main () {
     
-    string wordName;
-    string wordDescriptive;
-    string wordDescriptive2;
-    string wordThing;
-    string wordThing2;
-    string wordAnimal;
-    string wordGame;
+    string wordName = "Rosy Hernandez";
+    string wordDescriptive = "Blue";
+    string wordDescriptive2 = "Cold";
+    string wordThing = "Tall";
+    string wordThing2 = "Small";
+    string wordAnimal = "Cat";
+    string wordGame = "Jenga";
     
-    //Request information from the use with directions.
+    //Request information from the user with directions.
     cout << "Enter your name:" << endl;
     getline (cin, wordName); //'get line' allows the user to input information with spaces
     cout << endl;

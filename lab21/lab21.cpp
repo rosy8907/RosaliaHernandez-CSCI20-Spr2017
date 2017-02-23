@@ -32,8 +32,10 @@ int main () {
     windchillDifference = abs ( OldStyleWindChill - NewStyleWindChill) ;
     
     //outputs the information chart-style
+    cout << endl;
+    cout << endl;
     cout << "Wind Speed" << "  " << " Old Formula " << "  " << " New Formula " << "  " << " Difference " << endl;
-    cout << velocity << "MPH          " << OldStyleWindChill << "         " <<  NewStyleWindChill << "        " << windchillDifference << endl;
+    cout << velocity << "MPH          " << OldStyleWindChill << "         " <<  NewStyleWindChill << "          " << windchillDifference << endl;
     
     
     

@@ -9,10 +9,10 @@ using namespace std;
 
 class BookInfo {
     public: 
-        void SetAuthor (string authorName) {
-            writerName_ = authorName; 
+        void SetAuthor (string authorName = "none") {
+          writerName_ = authorName; 
         };
-        void SetTitle (string titleName){
+        void SetTitle (string titleName ){
             bookName_ = titleName;
         };
         int SetYear (int yearDate) {
@@ -24,10 +24,13 @@ class BookInfo {
         string GetTitle (){
             return bookName_ ;
         };
-        int GetYear (){
+        int GetYear () {
             return copyrightYear_ ;
         };
-        void Print (){
+        void Print (string a1, string t1, int y1) {
+            SetAuthor(a1);
+            SetTitle(t1);
+            SetYear(y1);
             cout << GetAuthor() << " "<< GetTitle() << " " << GetYear() << endl;
         };
         
@@ -45,28 +48,30 @@ int main () {
     BookInfo b4;
     BookInfo b5;
     
-    string a1 = " ";
-    string t1 = " ";
-    int d1 = 0;
-    getline (cin, a1);
-    getline (cin, t1);
-    cin >> d1;
-    b1.SetAuthor(a1);   
-    b1.SetTitle (t1);
-    b1.SetYear (d1);
-    
-    string a2 = " ";
-    string t2 = " ";
-    int d2 = 0;
-    getline (cin, a2);
-    getline (cin, t2);
-    cin >> a2;
-    b2.SetAuthor(a2);   
-    b2.SetTitle (t2);
-    b2.SetYear (d2);
-    
-    b1.Print();
-    b2.Print();
+   string author1 = " ";
+   cin.clear();
+   getline (cin, author1);
+   
+   string title1 = " ";
+   cin.clear();
+   getline (cin, title1);
+   int year1;
+   cin >> year1;
+   cin.clear();
+   cin.ignore();
+   string author2 = " ";
+   
+   getline (cin, author2);
+   string title2 = " ";
+   cin.clear();
+   getline (cin, title2);
  
+   int year2;
+   cin >> year2;
+   
+   
+   b1.Print(author1, title1, year1);
+   b2.Print(author2, title2, year2);
+
     
 }

@@ -2,28 +2,35 @@
 #include <string>  //Allows us to use strings
 using namespace std;
 
-
-class Salary
-{
-    private: 
-        double annual_;
-    public:
-        void SetAnnualSalary(double salary)
-        {
-            annual_ = salary;
-        }
-        double GetAnnualSalary()
-        {
-            return annual_;
-        }
-        void Print()
-        {
-             cout<<"$"<<annual_<<endl;
-        }
-};
-
-int main () {
-    Salary.SetAnnualSalary (1000);
-    Salary.GetAnnualSalary();
-    Salary.Print();
-}
+//idea from https://www.daniweb.com/programming/software-development/threads/233485/ask-cin-class-object 
+    class BookInfo
+    {
+        string author,title;
+        int year;
+        public :
+         void setInfo() { 
+             getline (cin, author);
+             getline (cin, title);
+             cin >> year;
+             
+             }
+         void getInfo() {
+             cout << author << title << year;
+         }
+        
+         
+    };
+    
+    int main () {
+        BookInfo book1;
+        BookInfo book2;
+        
+        book1.setInfo();
+        book2.setInfo();
+        
+        book1.getInfo();
+        book2.getInfo();
+        
+     
+        
+    }

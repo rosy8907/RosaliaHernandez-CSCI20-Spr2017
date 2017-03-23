@@ -1,6 +1,6 @@
 // CREATED BY: Rosalia Hernandez
 // CREATED ON: 9 MARCH 2017
-// This program will convert feet to miles, yards, and inches.
+// This program is a conversion program from miles to feet, yards and inches. 
 
 #include <iostream>
 using namespace std;

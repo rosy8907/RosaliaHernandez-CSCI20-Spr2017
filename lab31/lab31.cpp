@@ -77,38 +77,27 @@ int main () {                                                                   
     int addGB = 0;
     int totalDue = 0;
     int corporate = 0;
-    cout << "It's time to set up your phone plan." << endl;
-    cout << "How many dumb phones would you like?" << endl;
+    
+    cout << "How many dumb phones do you have?" << endl;
     cin >> dumb;                                                                //user input how many dumb phones
-    cout << "How many smart phones would you like?" << endl;
+    cout << "How many smart phones do you have?" << endl;
     cin >> smart;                                                               //user input how many smart phones
-    cout << "How many tablets would you like?" << endl;
+    cout << "How many tablets do you have?" << endl;
     cin >> tablet;                                                              //user input how many tablets
-    cout << "Would you like unlimited talk and text? This does not include data." << endl;
-    cout << "Press 1 if yes, press 0 if no." << endl;
+    cout << "Do you use data? Or only talk and text?" << endl;
+    cout << "Press 1 if you use data, press 0 if not." << endl;
     cin >> talkNText;                                                           //user input talk and text
-    cout << "Would you like unlimited talk text and data? This includes up to 10GB of data." << endl;
-    cout << "Press 1 if yes, press 0 if no" << endl;
-    cin >> data1;                                                               //user input talk text and data
-    cout << "Would you like more than 10GB of data?" << endl;
-    cout << "After the initial 10GB data included in the Unlimited plan, it is a $1.50 charge for each GB" << endl;
-    cout << "If you did not wish to have the unlimited plan, the rates are:" << endl;
-    cout << "$0.75 each GB up to 5GB" << endl;
-    cout << "$1.50 each GB after 5GB up to 15GB" << endl;
-    cout << "$3.00 each GB after 15GB" << endl;
-    cout << "How many more GB would you like?" << endl;
-    cin >> addGB;                                                               //user input additional data
+    cout << "How much data do you use? In GB?" << endl;
+    cin >> addGB;                                                               //user input talk text and data
     cout << "Are you a corporate employee? 1 for yes, 0 for no" << endl;
     cin >> corporate;
     cout <<endl;
-    cout <<  "Congratulations! You are all set up!" << endl;
     cout << endl;
     cout << "Overview:" << endl;
     cout << "You have " << dumb << " dumbphones, " << smart << " smartphones, and " << tablet << " tablets." << endl; 
     
     totalDue = DeviceCharge(dumb, smart, tablet) + MonthlyCharge(talkNText) + DataPackage(data1, addGB); //calculation of total service charge
-    cout << "Your monthly amount due will be $" << totalDue << endl;
-    cout << endl;
+    
     
     if (corporate == 1) {                                                       //adjusts monthly total with corporate discount of 10% off.
         int discount = totalDue / 10;

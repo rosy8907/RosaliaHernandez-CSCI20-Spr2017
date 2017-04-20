@@ -7,37 +7,51 @@ using namespace std;
 
 class ArrayTools {
     public:
-        ArrayTools( int numArray){
-            array_ = numArray;
+        ArrayTools( )
+        int Find_min(double myArray[], int numVals) {
+            int i = 0;
+            numVals = myArray[i];
+            for (i=0; i<myArray, i++) {
+                if (myArray[i] < numVals) {
+                    numVals = myArray[i];
+                }
+            }
+           return numVals; 
         }
-        int Find_min() {
-            
-        }
-        int Find_max() {
-            
+        int Find_max(double myArray[], int numVals ) {
+            int i = 0;
+            numVals = myArray[i];
+            for (i=0; i<array_, i++)
+                if (myArray[i] > numVals) {
+                    numVals = myArray[i];
+                }
+           return numVals;
         }
         int Find_sum() {
+            int i = 0;
+            for (i=0; i < array_; i++)
         }
         int Search() {
             
         }
         int Is_sorted() {
             
-        }
+        }  
         void Print() {
-            for (int i = 0; i < array_ ; i++) {
+            int i = 0;
+            for (i = 0; i < array_; i++) {
                 cout << "You entered: ";
                 cout << myArray[i] << endl;
             }
         }
         
     private:
-        int array_ ;
+       
 };
 
 
 
-// April Browne's my main function
+// April Browne's main function
 
 int main()
 {

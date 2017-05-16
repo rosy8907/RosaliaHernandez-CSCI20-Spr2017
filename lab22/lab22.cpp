@@ -9,7 +9,7 @@ using namespace std;
 
 int randomNumber () {      //declaring the function that generates a random number
     srand(time(0));        // uses the time as a seed to create a random number on every run
-    cout << "Your random number is " << ( rand() % 5 ) + 1 << "."<< endl;  //executes the random number
+    cout << "Your random number is " << ( rand() % 10 )  << "."<< endl;  //executes the random number
 }
 
 int main () {

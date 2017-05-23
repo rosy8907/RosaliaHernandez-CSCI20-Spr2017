@@ -1,0 +1,8 @@
+Correct Word:           Your Word:
+---------------------------------- 
+daiquiri      is not       daquiri
+mischievous   is       mischievous
+neighbor      is          neighbor
+lieutenant    is        lieutenant
+
+Percent Correct: 0.75%
